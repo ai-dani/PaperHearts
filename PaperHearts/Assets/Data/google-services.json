@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "157654007618",
+    "firebase_url": "https://paper-hearts-825f3-default-rtdb.firebaseio.com",
+    "project_id": "paper-hearts-825f3",
+    "storage_bucket": "paper-hearts-825f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157654007618:android:7a00b907323af5fcb912db",
+        "android_client_info": {
+          "package_name": "com.DoodleDaniStudios.PaperHearts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157654007618-8vtj6fqjggo67ve3bo93pq0c02k4nul6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiucNWgkKJJUwDsOKEHTOPq5tNJ_eqmeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157654007618-8vtj6fqjggo67ve3bo93pq0c02k4nul6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
