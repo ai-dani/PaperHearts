@@ -1,5 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - Customization
+    - CustomizationUI
+    - InitAvatarFirebase
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -34,6 +38,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
   sceneClasses:
     Assets/Scenes/AvatarCustomization.unity:
     - Class: 1
@@ -55,27 +60,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1534}
+      Script: {instanceID: 1712}
     - Class: 114
-      Script: {instanceID: 1840}
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 2214}
+      Script: {instanceID: 2404}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2420}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 2842}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3010}
+      Script: {instanceID: 3020}
+    - Class: 114
+      Script: {instanceID: 3066}
+    - Class: 114
+      Script: {instanceID: 3200}
     - Class: 114
       Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 4682}
+      Script: {instanceID: 3620}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 4836}
+    - Class: 114
+      Script: {instanceID: 5018}
+    - Class: 114
+      Script: {instanceID: 5412}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -185,6 +198,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: da87f01beec5955bb615ae8b0bd9862c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InitAvatarFirebase
+  - hash:
+      serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -267,6 +286,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 0187477fe67590dd951ee846eae7ef3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Customization
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -363,6 +388,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Firebase.Platform.dll
+    namespaceName: Firebase.Platform
+    className: FirebaseMonoBehaviour
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -503,6 +534,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: fb5512e9baebd4c0fb607ad56f1960d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomizationUI
+  - hash:
+      serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -618,4 +655,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/AvatarCustomization.unity
-  playerPath: D:/ASU/Work/PaperHearts/Builds/ui_test.apk
+  playerPath: D:/ASU/Work/PaperHearts/Builds/valentine_easteregg.apk

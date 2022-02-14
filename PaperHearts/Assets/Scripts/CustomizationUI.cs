@@ -2,14 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 // holds all the buttons and events, and connects it to the customization list class
 public class CustomizationUI : MonoBehaviour
 {
     Customization custom;
+    public TMP_Text customizeText;
+    public GameObject avatarPanel;
+
+    [Header("Torso")]
     public Button torsoButton;
     public RawImage torsoImage;
     private int torsoIterator;
+
+    [Header("Easter Egg Only")]
+    public Button badgeButton;
+    public Image badgeImage;
+    public int badgeClickCount; //easter egg only
+    public GameObject easterEgg; //easter egg only
     
     // Start is called before the first frame update
     void Start()
@@ -17,6 +28,9 @@ public class CustomizationUI : MonoBehaviour
         custom = GetComponent<Customization>();
         torsoIterator = 0;
         torsoButton.onClick.AddListener(ChangeTorso);
+
+        //easter egg only
+        badgeButton.onClick.AddListener(ToggleBadge);
     }
 
     public void ChangeTorso(){
@@ -40,9 +54,23 @@ public class CustomizationUI : MonoBehaviour
             // }
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+    public void ToggleBadge(){
+        if(badgeImage.gameObject.activeInHierarchy){
+            badgeImage.gameObject.SetActive(false);
+            customizeText.text = "He loves me not";
+        }
+        else{
+            badgeImage.gameObject.SetActive(true);
+            customizeText.text = "He loves me";
+        }
+
+        badgeClickCount++;
+
+        if(badgeClickCount == 10){
+            easterEgg.SetActive(true);
+            avatarPanel.SetActive(false);
+            badgeClickCount = 0;
+        }
     }
 }
