@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\InitAvatarFirebase.cs" />
      <Compile Include="Assets\Scripts\Customization.cs" />
      <Compile Include="Assets\Scripts\CustomizationUI.cs" />
+     <Compile Include="Assets\User.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -277,31 +278,31 @@
         <HintPath>D:/Program Files/Unity Versions/2020.3.11f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Auth">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.App">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Database">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.TaskExtension">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="Google.MiniJson">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Platform">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Compat">
-        <HintPath>D:/ASU/Work/PaperHearts/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>D:/Program Files/Unity Versions/2020.3.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -658,94 +659,94 @@
         <HintPath>D:/Program Files/Unity Versions/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>D:/ASU/Work/PaperHearts/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>D:/PersonalProjects/PaperHearts/PaperHearts/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

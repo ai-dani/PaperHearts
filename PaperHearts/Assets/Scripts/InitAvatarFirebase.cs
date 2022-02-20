@@ -5,6 +5,7 @@ using Firebase;
 using Firebase.Database;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using System.Text;
 
 public class InitAvatarFirebase : MonoBehaviour
 {
@@ -19,17 +20,24 @@ public class InitAvatarFirebase : MonoBehaviour
 
     private bool finishRetrieval, startSession;
     private FirebaseDatabase _database;
+
+    [Header("Authentication")]
+    public string key;
+    User user;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        
         custom=GetComponent<Customization>();
-        finishRetrieval = false;  startSession = false;
+        finishRetrieval = false;  
+        startSession = false;
         _database = FirebaseDatabase.DefaultInstance;
-        RetrieveAvatarPartsData();
-
+        RetrieveAvatarPartsData(); // retrieves general retrieval of avatar database
         startButton.onClick.AddListener(PopulateAvatarListsOnStart);
+        RetrieveUserData();
+        user = FindObjectOfType<User>();
     }
 
     //parts = hair, torso, bottom, etc.
@@ -42,7 +50,6 @@ public class InitAvatarFirebase : MonoBehaviour
             }
             else if(task.IsCompleted){
                 DataSnapshot snapshot = task.Result;
-
 
                 //=======STEPS TOWARDS RETRIEVAL==========
                 //1) count total children of an avatar part 
@@ -66,6 +73,7 @@ public class InitAvatarFirebase : MonoBehaviour
         });
     }
 
+    // Populates general customization of avatar
     void PopulateAvatarListsOnStart(){
 
         if(startSession){ //in case, we return to the homescreen again, don't populate again
@@ -95,6 +103,85 @@ public class InitAvatarFirebase : MonoBehaviour
         }    
     } 
 
+//=============================== USER DATA MANAGEMENT ==========================================
 
+    private void RetrieveUserData(){
+        string potentialKey = ReturnUserKeyIfExists();
+        string newUserKey = ""; // this variable is only used for new users registered devices
+
+        // if empty generate a key to put into database
+        if(potentialKey.Equals("")){
+            newUserKey = RandomUserKeyGenerator(16);
+            Debug.Log("random key: " + newUserKey);
+            PlayerPrefs.SetString("userkey", newUserKey);
+            Debug.Log("get userkey from player pref:" + PlayerPrefs.GetString("userkey"));
+        }
+
+        FirebaseDatabase.DefaultInstance.GetReference("users").GetValueAsync().ContinueWith(task => //LEARNED: YOU CANNOT ACCESS PLAYERPREF INSIDE FIREBASE INSTANCE!!!!
+        {
+
+            if(task.IsFaulted){
+            Debug.Log("Error, cannot retrieve user data");
+            }
+            else if(task.IsCompleted){ //successfully retrieve data
+                DataSnapshot snapshot = task.Result;
+
+                //if the key returned is blank, this device is a new device / new user
+                if(potentialKey.Equals("")){
+                    SaveUserDeviceData(newUserKey);
+                } 
+                
+                //***IMPORTANT: USER MUST NOT DELETE PLAYER PREF KEY OR AVATAR DATA WILL BE DELETED***
+                else{ //else there is already an existing user data for this device 
+
+                    //populate user instance class
+                    string name = snapshot.Child(potentialKey).Child("name").Value.ToString(); //path to key
+                    Debug.Log("This is " + name + " from users firebase");
+                }
+            }
+        });
+
+
+    }
+    
+    public void SaveUserDeviceData(string generatedKey){
+        string json = JsonUtility.ToJson(user);
+        _database.RootReference.Child("users").Child(generatedKey).SetRawJsonValueAsync(json).ContinueWith(task =>
+        {
+            if(task.IsCompleted){
+                Debug.Log("successfully added user data to firebase");
+            }
+            else{
+                Debug.Log("not successful");
+            }
+        }
+        );
+        
+        
+    }
+
+    public string ReturnUserKeyIfExists(){
+        string userKey = "";
+        // if it does exist/stored in playerprefs
+        // retrieve the player's "#####" key
+        if(PlayerPrefs.HasKey("userkey")){
+            userKey = PlayerPrefs.GetString("userkey"); 
+        }
+        return userKey;
+    }
+
+    public static string RandomUserKeyGenerator(int lengthNeeded){
+
+        StringBuilder userKey = new StringBuilder("");
+        char[] chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
+        char singleChar;
+
+        while(userKey.Length < lengthNeeded){
+            singleChar = chars[UnityEngine.Random.Range(0, chars.Length)];
+            userKey.Append(singleChar);
+        }
+
+        return userKey.ToString();
+    }
 }
 
